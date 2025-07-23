@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sofia</title>
+
+    <!-- Link esterno per il collegamento su Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Link esterno per il Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+    <!-- Link interno per il collegamento alla pagina di Stile -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
+
+    <!-- Descrivi il tuo sito in pochi passi -->
+    <meta name="descrizione" content="Descrivi il tuo sito">
+
+    <!-- Tag per inserire l'autore del sito -->
+    <meta name="author" content="Cotugno Vincenzo">
+
+    <!-- Descrivi i linguaggi utilizzati: !Attenzione a non rilevare troppo! -->
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+
+    <!-- Icona del sito -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</head>
+
+<body>
+
+
+
+ 
+
+
+    <main>
+
+
+        <nav>
+            <div class='nav-container'>
+                <div class='highlight-container'>
+                    <div class='hl hl-left'></div>
+                    <div class='hl hl-center'></div>
+                    <div class='hl hl-right'></div>
+                </div>
+                <div class='nav'>
+                    <div class='btn-container btn-1'>
+                        <button class='btn btn-hled' id='btn1'>Home</button>
+                    </div>
+                    <div class='btn-container btn-2'>
+                        <button class='btn' id='btn2'>Info</button>
+                    </div>
+                    <div class='btn-container btn-3'>
+                        <button class='btn' id='btn3'>Contatti</button>
+                    </div>
+                </div>
+                <div class='cover-container cover-l'></div>
+
+                <div class='feedback'>
+                    <div class='feedback-wv-1'>
+                        <div class='fb-wv-1'></div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+
+
+
+
+
+        <div class="hero" id="hero">
+            <div class="doodle">
+                <img src="./doodle/d1.png" width="500px">
+            </div>
+            <h1>Sofia, il tuo <span>virtual</span> assistant</h1>
+            <h3>Rivoluziona la tua professione, fatti aiutare da Sofia</h3>
+       
+       
+            <div class="content_video">
+                <video src="/videos/WhatsApp Video 2025-07-15 at 12.44.42.mp4" controls loop></video>
+            </div>
+        </div>
+
+
+
+
+
+
+        <div class="call">
+            <div class="doodle d2">
+                <img src="./doodle/d2.png">
+            </div>
+            <h2>Cosa aspetti?</h2>
+            <p>Clicca il bottone per richiedere maggior informazioni</p>
+            <a href="" data-text="Contattaci" class="button button-ripple button-overlay button-primary">Contattaci</a>
+        </div>
+        
+
+
+
+
+    </main>
+
+
+
+
+
+
+
+
+
+    <script src="js/main.js"></script>
+
+
+
+    <!-- Link esterno per collegare il Framework Gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+    <!-- Link esterno per collegare il Framework ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <!-- Link esterno per collegare il Framework Lenis -->
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
+
+
+    <script>
+        const lenis = new Lenis({
+            duration: 2.2,
+        });
+        function raf(time) {
+            lenis.raf(time);
+            requestAnimationFrame(raf);
+        }
+        requestAnimationFrame(raf);
+        gsap.registerPlugin(ScrollTrigger);
+        let mm = gsap.matchMedia();
+
+    </script>
+
+
+
+
+
+</body>
+
+</html>

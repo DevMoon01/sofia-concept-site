@@ -1,0 +1,136 @@
+@media (max-width: 1100px) {
+
+    main {
+        width: 70vw;
+    }
+
+
+    .hero h1 {
+        font-size: 6rem;
+    }
+
+    .hero h3 {
+        font-size: 1.7rem;
+    }
+
+    .doodle {
+        left: 30%;
+        top: 3%;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+
+    main {
+        width: 90vw !important;
+    }
+
+
+    .hero h1 {
+        font-size: 4.5rem;
+    }
+
+    .hero h3 {
+        font-size: 1.4rem;
+    }
+
+    .doodle {
+        left: 30%;
+        top: 3%;
+    }
+
+    .doodle img {
+        width: 350px !important;
+    }
+
+    .content_video video {
+        border-radius: 20px;
+        width: 100%;
+        height: 600px;
+    }
+
+    .content_video {
+        margin-top: 23em;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 668px) {
+    .doodle {
+        left: 10%;
+        top: 6%;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero h3 {
+        font-size: 1.2rem;
+    }
+
+    .doodle img {
+        width: 270px !important;
+    }
+
+    main {
+        width: 95vw;
+    }
+
+
+    .call h2 {
+        font-size: 1.8rem !important;
+        font-weight: 800;
+        z-index: 3;
+    }
+
+    .call p {
+        font-size: 1.2rem !important;
+        font-weight: 100;
+    }
+
+    .call a {
+        text-decoration: none;
+        margin-top: 2rem;
+        font-size: 1.2rem;
+    }
+
+    .d2 {
+        position: absolute;
+        top: 22%;
+        left: 40%;
+        z-index: 2;
+        transform: rotate(-20deg);
+        width: 220px !important;
+    }
+
+    .d2 img {
+        width: 220px !important;
+    }
+}
