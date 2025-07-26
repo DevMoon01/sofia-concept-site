@@ -1,24 +1,205 @@
+@media (max-width: 1200px) {
+    .our-product {
+        padding: 30px 5%;
+    }
+
+    .our-product .product {
+        width: 100% !important;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .our-product .product .card {
+        width: 100% !important;
+    }
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 1300px) {
+    .about {
+        margin-bottom: 3rem;
+        background: linear-gradient(35deg, #60a7e03d, #2195f318 90%);
+        width: 100%;
+        min-height: 70vh;
+        padding: 35px 2%;
+    }
+
+    .about h2 {
+        font-size: 3rem;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    .about .grid-two {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        padding: 20px;
+        padding-left: 0;
+        padding-right: 0 !important;
+        margin-top: 2rem;
+        width: 100%;
+        align-items: center
+    }
+
+    .about .grid-two .card {
+        width: 100%;
+        min-height: 350px;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .about .grid-two .card-video {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about .grid-two .card video {
+        width: 100%;
+        display: block;
+        height: 100%;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+
+
+}
+
+
+
+
+
+
+
 @media (max-width: 1100px) {
-
-    main {
-        width: 70vw;
+    .title {
+        font-size: 5.8rem;
+        line-height: 1.2;
+        margin: 1rem 0;
     }
 
-
-    .hero h1 {
-        font-size: 6rem;
+    .description {
+        font-size: 18px;
+        margin-bottom: 1.5rem;
+        line-height: 1.4;
     }
 
-    .hero h3 {
-        font-size: 1.7rem;
+    .effect-label {
+        font-size: 2.1rem;
+        font-weight: 200;
+        margin-bottom: 0.5rem;
+        display: inline-block;
+        text-align: center;
     }
 
-    .doodle {
-        left: 30%;
-        top: 3%;
+    .effect-label-2 {
+        font-size: 1.1rem;
+        font-weight: 200;
+        margin-bottom: 0.5rem;
+        display: inline-block;
+        text-align: center;
     }
 
+    .hero-right {
+        margin-top: 4rem;
+    }
 
+    .our-product .product {
+        width: 100% !important;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .our-product .product {
+        width: 100% !important;
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .about .grid-two .card-text {
+        padding: 2.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+    }
+
+    .about .grid-two .card-text h2 {
+        font-size: 1.4rem;
+        font-weight: 200;
+        margin-bottom: 15px;
+    }
+
+    .about .grid-two .card-text h2 span {
+        font-weight: 800;
+    }
+
+    .about .grid-two .card-text p {
+        font-size: 17px;
+        line-height: 1.3;
+    }
+
+    .hero-left {
+        margin-top: 20vh;
+    }
+
+    .our-product .product .card {
+        min-height: 270px;
+    }
+
+    .our-product .product .card .icon {
+        width: 120px;
+        height: 120px;
+        background-color: #2196f3;
+        border-radius: 50%;
+        overflow: hidden;
+        color: #eff4ff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .our-product .product .card .icon i {
+        font-size: 3rem;
+    }
+
+    .about .grid-two {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 20px;
+        padding-left: 0;
+        padding-right: 0 !important;
+        margin-top: 2rem;
+        width: 100%;
+        align-items: center;
+        justify-items: center
+    }
+
+    .about .grid-two .card-video {
+        width: 400px !important;
+    }
 }
 
 
@@ -34,37 +215,38 @@
 
 
 @media (max-width: 768px) {
-
-    main {
-        width: 90vw !important;
+    #menu-icon {
+        display: block;
     }
 
-
-    .hero h1 {
-        font-size: 4.5rem;
-    }
-
-    .hero h3 {
-        font-size: 1.4rem;
-    }
-
-    .doodle {
-        left: 30%;
-        top: 3%;
-    }
-
-    .doodle img {
-        width: 350px !important;
-    }
-
-    .content_video video {
-        border-radius: 20px;
+    .navlist {
+        position: absolute;
+        top: 0;
+        right: -100%;
         width: 100%;
-        height: 600px;
+        height: 100vh;
+        backdrop-filter: blur(1px);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 180px;
+        background-color: #eff4ffec;
+        filter: blur();
     }
 
-    .content_video {
-        margin-top: 23em;
+    .navlist a {
+        display: block;
+        padding: 0;
+        margin: 0px 0px 50px 0px;
+        font-size: 1.7rem;
+    }
+
+    .navlist.open {
+        right: 0;
+    }
+
+    header {
+        flex-direction: row-reverse
     }
 }
 
@@ -81,56 +263,28 @@
 
 
 
-@media (max-width: 668px) {
-    .doodle {
-        left: 10%;
-        top: 6%;
+@media (max-width: 650px) {
+    .hero-left .title {
+        font-size: 3.7rem;
     }
 
-    .hero h1 {
-        font-size: 2.5rem;
+    .hero-left .intro {
+        font-size: 13px;
     }
-
-    .hero h3 {
-        font-size: 1.2rem;
-    }
-
-    .doodle img {
-        width: 270px !important;
-    }
-
-    main {
-        width: 95vw;
-    }
+}
 
 
-    .call h2 {
-        font-size: 1.8rem !important;
-        font-weight: 800;
-        z-index: 3;
-    }
 
-    .call p {
-        font-size: 1.2rem !important;
-        font-weight: 100;
-    }
 
-    .call a {
-        text-decoration: none;
-        margin-top: 2rem;
-        font-size: 1.2rem;
-    }
 
-    .d2 {
-        position: absolute;
-        top: 22%;
-        left: 40%;
-        z-index: 2;
-        transform: rotate(-20deg);
-        width: 220px !important;
-    }
 
-    .d2 img {
-        width: 220px !important;
+
+
+
+
+@media (max-width: 480px) {
+    .about .grid-two .card-video {
+        width: 320px !important;
+        height: 100%;
     }
 }

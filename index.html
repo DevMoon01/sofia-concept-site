@@ -37,88 +37,125 @@
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
 </head>
 
 <body>
 
 
 
- 
-
-
-    <main>
-
-
-        <nav>
-            <div class='nav-container'>
-                <div class='highlight-container'>
-                    <div class='hl hl-left'></div>
-                    <div class='hl hl-center'></div>
-                    <div class='hl hl-right'></div>
-                </div>
-                <div class='nav'>
-                    <div class='btn-container btn-1'>
-                        <button class='btn btn-hled' id='btn1'>Home</button>
-                    </div>
-                    <div class='btn-container btn-2'>
-                        <button class='btn' id='btn2'>Info</button>
-                    </div>
-                    <div class='btn-container btn-3'>
-                        <button class='btn' id='btn3'>Contatti</button>
-                    </div>
-                </div>
-                <div class='cover-container cover-l'></div>
-
-                <div class='feedback'>
-                    <div class='feedback-wv-1'>
-                        <div class='fb-wv-1'></div>
-                    </div>
-                </div>
-            </div>
-        </nav>
 
 
 
 
+    <header>
+
+        <ul class="navlist">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Price</a></li>
+            <li><a href="#">Service</a></li>
+        </ul>
+
+        <div class="nav-right">
+            <a href="" class="btn">Contattaci</a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    </header>
 
 
 
-        <div class="hero" id="hero">
-            <div class="doodle">
-                <img src="./doodle/d1.png" width="500px">
-            </div>
-            <h1>Sofia, il tuo <span>virtual</span> assistant</h1>
-            <h3>Rivoluziona la tua professione, fatti aiutare da Sofia</h3>
-       
-       
-            <div class="content_video">
-                <video src="./videos/WhatsApp Video 2025-07-15 at 12.44.42.mp4" controls loop></video>
-            </div>
+    <section class="hero">
+        <div class="hero-left">
+            <p class="intro">INTRODUCING</p>
+            <h1 class="title">SOFIA<br>AI GENERETDE</h1>
+            <p class="description">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+            </p>
+            <a href="" class="btn">Get Started</a>
         </div>
 
-
-
-
-
-
-        <div class="call">
-            <div class="doodle d2">
-                <img src="./doodle/d2.png">
-            </div>
-            <h2>Cosa aspetti?</h2>
-            <p>Clicca il bottone per richiedere maggior informazioni</p>
-            <a href="" data-text="Contattaci" class="button button-ripple button-overlay button-primary">Contattaci</a>
+        <div class="hero-right">
+            <span class="effect-label">Effect Conversation</span>
+            <span class="effect-label-2">Responds in multi language, writes messages, <br> sends emails and takes
+                reservations</span>
         </div>
-        
+    </section>
 
 
 
 
-    </main>
+
+
+    <section class="our-product">
+        <h2>Our Product</h2>
+        <div class="product">
+            <div class="card">
+                <div class="icon">
+                    <i class="fa-solid fa-language"></i>
+                </div>
+                <div class="title">
+                    <h2>Multi Language</h2>
+                </div>
+                <div class="par">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis, sapiente!</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="icon">
+                    <i class="fa-solid fa-people-group"></i>
+                </div>
+                <div class="title">
+                    <h2>suitable for All</h2>
+                </div>
+                <div class="par">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis, sapiente!</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="icon">
+                    <i class="fa-solid fa-eye-low-vision"></i>
+                </div>
+                <div class="title">
+                    <h2>privacy always</h2>
+                </div>
+                <div class="par">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis, sapiente!</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 
 
+
+    <section class="about">
+        <h2>About Us</h2>
+
+        <div class="grid-two">
+            <div class="card card-text">
+                <h2>Sono <span>Sofia,</span></h2>
+                <p>sono il tuo agente personale, rispondo alle telefonate con voce naturale e cordiale.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae libero provident rem cumque quod
+                    distinctio minus nostrum molestiae magni vero!</p>
+                <br>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, voluptate ullam excepturi, ipsa
+                    aliquid eaque mollitia nam debitis, autem neque distinctio similique molestiae aperiam! Tenetur sunt
+                    a itaque eligendi minima!</p>
+            </div>
+            <div class="card card-video">
+                <video src="./videos/WhatsApp Video 2025-07-15 at 12.44.42.mp4" loop controls></video>
+            </div>
+        </div>
+    </section>
 
 
 
@@ -138,6 +175,7 @@
     <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
 
 
+
     <script>
         const lenis = new Lenis({
             duration: 2.2,
@@ -153,6 +191,8 @@
     </script>
 
 
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 
 
 
