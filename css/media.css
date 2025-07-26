@@ -123,10 +123,83 @@
         width: 100% !important;
         grid-template-columns: 1fr;
     }
+
+
+
+
+    .features {
+        padding: 35px 2%;
+    }
+
+    .features .feature {
+        margin-top: 7rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .features .feature .card {
+        min-height: 200px;
+        height: auto;
+    }
+
+
+
+    .call-to-action {
+        height: auto;
+        width: 100%;
+        padding: 35px 2%;
+        margin-bottom: 5rem;
+
+    }
+
+    .call-to-action .text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+
+
+
+    .pricings {
+        height: auto;
+        width: 100%;
+        padding: 35px 2%;
+        margin-bottom: 5rem;
+        min-height: 500px;
+        margin-top: 4rem;
+        margin-bottom: 5rem;
+    }
+
+
+    .pricings .pricing {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        width: 80%;
+        margin: 0 auto;
+    }
+
 }
 
 
 
+
+
+
+@media (max-width: 950px) {
+    .contents {
+        padding: 35px 2%;
+    }
+
+    .contents .content {
+        width: 80%;
+    }
+}
 
 
 
@@ -271,12 +344,39 @@
     .hero-left .intro {
         font-size: 13px;
     }
+
+
+    .features .feature {
+        margin-top: 7rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .features .feature .card {
+        min-height: auto;
+        height: auto;
+    }
 }
 
 
 
 
 
+
+
+
+
+
+@media (max-width: 580px) {
+    .pricings .pricing {
+        display: grid;
+        grid-template-columns: 1fr ;
+        gap: 70px !important;
+        width: 80%;
+        margin: 0 auto;
+    }
+}
 
 
 
