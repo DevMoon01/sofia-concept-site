@@ -199,6 +199,19 @@
     .contents .content {
         width: 80%;
     }
+
+
+
+
+    .contact .forms {
+        position: absolute;
+        width: 70%;
+        min-height: 50%;
+        height: auto;
+        border-radius: 20px;
+        padding: 2rem;
+    }
+
 }
 
 
@@ -273,6 +286,34 @@
     .about .grid-two .card-video {
         width: 400px !important;
     }
+
+
+    .footer .top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer .top .logo {
+        font-size: 23px;
+    }
+
+    .footer .top .info {
+        gap: 16px;
+    }
+
+    .footer .top .info a {
+        font-size: 12px;
+    }
+
+    .footer .top .socials .social {
+        width: 31px;
+        height: 31px;
+    }
+
+    .footer .top .socials .social i {
+        font-size: 13px;
+    }
 }
 
 
@@ -321,6 +362,32 @@
     header {
         flex-direction: row-reverse
     }
+
+
+
+    .contact .forms {
+        position: absolute;
+        width: 95%;
+        min-height: 50%;
+        height: auto;
+        border-radius: 20px;
+        padding: 2rem;
+    }
+
+
+
+    .footer {
+        width: 100%;
+        min-height: 140px;
+        background: rgba(255, 255, 255, 0.04);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.021);
+        backdrop-filter: blur(5.8px);
+        -webkit-backdrop-filter: blur(5.8px);
+        border: 1px solid rgba(255, 255, 255, 0.03);
+        background-color: #1462ff;
+        padding: 35px 0.40%;
+    }
+
 }
 
 
@@ -357,6 +424,50 @@
         min-height: auto;
         height: auto;
     }
+
+
+
+    .footer .top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .contact .forms .inputs button {
+        width: 100%;
+        padding: 18px 15px;
+        outline: 0;
+        font-size: 17px;
+        border: 2px solid #1462ff;
+        border-radius: 17px;
+        background-color: #1462ff;
+        color: #fff;
+        cursor: pointer;
+        font-weight: 800;
+    }
+
+
+    .contact .forms .inputs textarea {
+        width: 100%;
+        padding: 18px 15px;
+        outline: 0;
+        font-size: 17px;
+        border: 2px solid #1462ff;
+        border-radius: 17px;
+        resize: none;
+        height: 220px;
+    }
+
+    .contact .forms .inputs input {
+        width: 100%;
+        padding: 18px 15px;
+        outline: 0;
+        font-size: 17px;
+        border: 2px solid #1462ff;
+        border-radius: 17px;
+    }
 }
 
 
@@ -371,7 +482,7 @@
 @media (max-width: 580px) {
     .pricings .pricing {
         display: grid;
-        grid-template-columns: 1fr ;
+        grid-template-columns: 1fr;
         gap: 70px !important;
         width: 80%;
         margin: 0 auto;
@@ -386,5 +497,26 @@
     .about .grid-two .card-video {
         width: 320px !important;
         height: 100%;
+    }
+}
+
+
+
+@media (max-width: 430px) {
+    .footer .top .info a {
+        font-size: 10px;
+    }
+
+    .footer .top .logo {
+        font-size: 14px;
+    }
+
+    .footer .bottom p {
+        font-size: 10px;
+    }
+
+    .contact .forms {
+        width: 100%;
+        padding: 0.8rem;
     }
 }
